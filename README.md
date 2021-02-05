@@ -26,10 +26,10 @@ BLOSUM was created in order to address the issue of variable amino acid mutation
 Using tools from the website https://www.ebi.ac.uk/ we are able to redeem a sequence and perform sequence alignment on both gene and protein sequences, while having the option to adjust the algorithms’ parameters.
 The algorithms used using this resource are:
 
-## Algorithms used:
+## Algorithms:
 - Global alignment algorithm: Needleman-Wunsch
 - Local alignment algorithm: Smith-Waterman
-- My implementations take into account affine cost. A gap of length k is more probable than k gaps of length 1; a gap may be due to a single mutational event while separated gaps are probably due to distinct mutational events. A linear gap penalty function treats these cases the same, so, in order to implement affine function, other than the 3 matrices strategy, I have h as a penalty associated with opening a gap, and g as a smaller penalty for extending the gap.
+- My own global and local implementations take into account affine cost. A gap of length k is more probable than k gaps of length 1; a gap may be due to a single mutational event while separated gaps are probably due to distinct mutational events. A linear gap penalty function treats these cases the same, so, in order to implement affine function, other than the 3 matrices strategy, I have h as a penalty associated with opening a gap, and g as a smaller penalty for extending the gap.
 
 
 
