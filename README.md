@@ -31,5 +31,9 @@ The algorithms used using this resource are:
 - Local alignment algorithm: Smith-Waterman
 - My own global and local implementations take into account affine cost. A gap of length k is more probable than k gaps of length 1; a gap may be due to a single mutational event while separated gaps are probably due to distinct mutational events. A linear gap penalty function treats these cases the same, so, in order to implement affine function, other than the 3 matrices strategy, I have h as a penalty associated with opening a gap, and g as a smaller penalty for extending the gap.
 
+## Run Code
+Compile: python3 B1.py
+Use: Pick an option [1-7]. Write chosen matrix, gapopen and gapext values in the same line.
+
 
 
